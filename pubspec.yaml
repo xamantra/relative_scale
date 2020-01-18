@@ -1,0 +1,11 @@
+name: relative_scale
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+author: xamantra <xamantrx@gmail.com>
+
+environment:
+  sdk: ">=2.5.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
