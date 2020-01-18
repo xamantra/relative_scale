@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../lib/relative_scale.dart';
+import 'package:relative_scale/relative_scale.dart';
 
 class ScaledExample extends StatefulWidget {
   ScaledExample({Key key}) : super(key: key);
