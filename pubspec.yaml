@@ -1,5 +1,5 @@
-name: relative_scale
-description: A starting point for Dart libraries or applications.
+name: RelativeScale
+description: RelativeScaler is a simple and custom sizing system for flutter widgets to achieve the same physical sizes across different devices.
 version: 1.0.0
 author: xamantra <xamantrx@gmail.com>
 
