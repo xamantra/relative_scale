@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-mixin RelativeScaler {
+mixin RelativeScale {
   double _screenHeight;
   double _screenWidth;
 
