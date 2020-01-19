@@ -13,3 +13,7 @@
 ## 1.0.3
 
 - Rename the mixin `RelativeScaler` to `RelativeScale` to follow package name.
+
+## version: 1.0.4
+
+- Added documentation and previews on readme and updated example.dart
