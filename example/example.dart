@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:relative_scale/relative_scale.dart';
 
 class ScaledExample extends StatefulWidget {
@@ -9,16 +8,10 @@ class ScaledExample extends StatefulWidget {
   _ScaledExampleState createState() => _ScaledExampleState();
 }
 
-// RelativeScaler is a mixin
 class _ScaledExampleState extends State<ScaledExample> with RelativeScale {
   @override
   Widget build(BuildContext context) {
-    // this is very important, you should always call this whenever you implement RelativeScaler on a widget.
     initRelativeScaler(context);
-
-    /* You'll see "sy" and "sx" below: */
-    /* which means "sy" = size relative to height of the screen. */
-    /* which means "sx" = size relative to width of the screen. */
 
     return Container(
       height: screenHeight,
@@ -28,7 +21,7 @@ class _ScaledExampleState extends State<ScaledExample> with RelativeScale {
           children: <Widget>[
             Container(
               height: sy(160),
-              width: sx(400),
+              width: sy(240),
               margin: EdgeInsets.all(sy(12)),
               color: Colors.redAccent,
               child: Center(
@@ -43,7 +36,7 @@ class _ScaledExampleState extends State<ScaledExample> with RelativeScale {
             ),
             Container(
               height: sy(80),
-              width: sx(450),
+              width: sy(280),
               margin: EdgeInsets.all(sy(12)),
               color: Colors.green,
               child: Center(
@@ -58,7 +51,7 @@ class _ScaledExampleState extends State<ScaledExample> with RelativeScale {
             ),
             Container(
               height: sy(120),
-              width: sx(400),
+              width: sy(240),
               margin: EdgeInsets.all(sy(12)),
               color: Colors.blue,
               child: Center(
