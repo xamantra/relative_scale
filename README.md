@@ -4,9 +4,12 @@ RelativeScaler is a simple and custom sizing system for flutter widgets to achie
 
 ## Preview
 
-[Scaled](https://i.imgur.com/t2o51ls.png)
+My base screensize when layouting these widgets is `480 x 800`
+![Scaled](./preview/scaled.png)
+Now, look at this scaled widgets with _RelativeScale_. There is a difference yeah, but that's because of the system scaled sizes like the AppBar (look at the appbar's height :) ). Now let's forget about that and focus on the texts and the rectangle containers. They are definitely same sizes.
 
-[Unscaled](https://i.imgur.com/Qe0GNVk.png)
+![Unscaled](./preview/unscaled.png)
+Now, for unscaled sizes, no _RelativeScale_ at all. Well, that's quite obvious :). Look at the texts on the last image, they are very small comparing to the first image. And the rectangle containers, very big difference.
 
 ## Usage
 
@@ -132,6 +135,8 @@ Container(
 they will not be the same size anymore, using relative scaler will make your sizes a bit bigger. But the hard work will payoff after adjusting your sizes because your app will now have the same widget sizes in every screen size.
 
 Please note that these scaler methods are relative to screen size. So basically in this case `sy(50)` and `sx(50)` is NOT the same size.
+
+ALSO, another thing to note is that if you use `sy` for height and `sx` for width (or vice-versa), you'll get widgets with the same ratio (not size) which is still useful. The _Scaled_ preview image above uses only `sy`, and containers and text has the same size across different screens.
 
 If you want to make a perfect _Square_ container, DON'T do this:
 
