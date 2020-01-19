@@ -21,30 +21,65 @@ import 'package:relative_scale/relative_scale.dart';
 class ScaledExample extends StatefulWidget {
 . . .
 
-class _ScaledExampleState extends State<ScaledExample> with RelativeScaler {
+class _ScaledExampleState extends State<ScaledExample> with RelativeScale {
   @override
   Widget build(BuildContext context) {
-    // When you implement the RelativeScaler mixin, you have to initialize it
-    // in order to use the scaler methods.
+    // important: initialize relative scale.
     initRelativeScaler(context);
 
     return Container(
-      // "screenHeight" and "screenWidth" property is part of the mixin.
+      // screenHeight and screenWidth is part of the mixin.
       height: screenHeight,
       width: screenWidth,
-      child: Container(
-        height: sy(160), // "sy" means size relative to device's screen height.
-        width: sx(400), // "sx" means size relative to device's screen width.
-        margin: EdgeInsets.all(sy(12)), // scaled margin.
-        color: Colors.redAccent,
-        child: Center(
-          child: Text(
-            "Scaled Text",
-            style: TextStyle(
-              fontSize: sy(24), // scaled font size.
-              color: Colors.white,
+      child: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Container(
+              height: sy(160),
+              width: sy(240),
+              margin: EdgeInsets.all(sy(12)),
+              color: Colors.redAccent,
+              child: Center(
+                child: Text(
+                  "Scaled Text 1",
+                  style: TextStyle(
+                    fontSize: sy(24),
+                    color: Colors.white,
+                  ),
+                ),
+              ),
             ),
-          ),
+            Container(
+              height: sy(80),
+              width: sy(280),
+              margin: EdgeInsets.all(sy(12)),
+              color: Colors.green,
+              child: Center(
+                child: Text(
+                  "Scaled Text 2",
+                  style: TextStyle(
+                    fontSize: sy(24),
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              height: sy(120),
+              width: sy(240),
+              margin: EdgeInsets.all(sy(12)),
+              color: Colors.blue,
+              child: Center(
+                child: Text(
+                  "Scaled Text 3",
+                  style: TextStyle(
+                    fontSize: sy(24),
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
