@@ -4,7 +4,7 @@ RelativeScaler is a simple and custom sizing system for flutter widgets to achie
 
 ## Preview
 
-My base screensize when layouting these widgets is `480 x 800`
+My base screensize when layouting these widgets is `480 x 800`. Source code for this preview app is [here](https://github.com/xamantra/flutter_relative_scale_example).
 ![Scaled](./preview/scaled.png)
 Now, look at this scaled widgets with _RelativeScale_. There is a difference yeah, but that's because of the system scaled sizes like the AppBar (look at the appbar's height :) ). Now let's forget about that and focus on the texts and the rectangle containers. They are definitely same sizes.
 

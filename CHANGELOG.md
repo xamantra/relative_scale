@@ -17,3 +17,7 @@
 ## version: 1.0.4
 
 - Added documentation and previews on readme and updated example.dart
+
+## version: 1.0.5
+
+- Added link to the preview app.
