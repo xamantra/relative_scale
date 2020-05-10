@@ -1,6 +1,6 @@
 # RelativeScale for Flutter
 
-RelativeScaler is a simple and custom sizing system for flutter widgets to achieve the same physical sizes across different devices.
+RelativeScale is a simple and custom sizing system for flutter widgets to achieve the same physical sizes across different devices.
 
 ## Preview
 
@@ -104,7 +104,7 @@ Full example is in the [Example](https://pub.dev/packages/relative_scale#-exampl
 
 Now, this example is implemented in _Stateful->State_ widget. How about _Stateless_ widget?
 
-Well, if you implement it on a stateless widget, you'll get an analyzer warning saying Stateless class is `immutable`. But the `RelativeScaler` mixin's properties are not final so it's mutable.
+Well, if you implement it on a stateless widget, you'll get an analyzer warning saying Stateless class is `immutable`. But the `RelativeScale` mixin's properties are not final so it's mutable.
 
 YOU CAN STILL USE the mixin in Stateless widget and run the app fine without problems actually.
 It's just a linter warning but if you don't wanna see it, you can setup a custom analyzer options, like this:
@@ -132,7 +132,7 @@ Container(
 )
 ```
 
-and you implemented RelativeScaler:
+and you implemented RelativeScale:
 
 ```Dart
 Container(

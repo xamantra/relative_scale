@@ -4,13 +4,13 @@ mixin RelativeScale {
   double _screenHeight;
   double _screenWidth;
 
-  /// `RelativeScaler.screenHeight` -> the height of the screen.
+  /// `RelativeScale.screenHeight` -> the height of the screen.
   double get screenHeight => _screenHeight;
 
-  /// `RelativeScaler.screenWidth` -> the width of the screen.
+  /// `RelativeScale.screenWidth` -> the width of the screen.
   double get screenWidth => _screenWidth;
 
-  /// Initialize `RelativeScaler`.
+  /// Initialize `RelativeScale`.
   initRelativeScaler(BuildContext context) {
     var size = MediaQuery.of(context).size;
     _screenHeight = size.height;
