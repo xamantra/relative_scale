@@ -5,15 +5,24 @@ RelativeScaler is a simple and custom sizing system for flutter widgets to achie
 ## Preview
 
 My base screensize when layouting these widgets is `480 x 800`. Source code for this preview app is [here](https://github.com/xamantra/flutter_relative_scale_example).
+
+- Scaled with `RelativeScale`.
 ![Scaled](./preview/scaled.png)
 Now, look at this scaled widgets with _RelativeScale_. There is a difference yeah, but that's because of the system scaled sizes like the AppBar (look at the appbar's height :) ). Now let's forget about that and focus on the texts and the rectangle containers. They are definitely same sizes.
+  <hr>
 
-![Unscaled](./preview/unscaled.png)
-Now, for unscaled sizes, no _RelativeScale_ at all. Well, that's quite obvious :). Look at the texts on the last image, they are very small comparing to the first image. And the rectangle containers, very big difference.
+- Normal scaling from flutter.
+  ![Unscaled](./preview/unscaled.png)
+  Now, for unscaled sizes, no _RelativeScale_ at all. Well, that's quite obvious :). Look at the texts on the last image, they are very small comparing to the first image. And the rectangle containers, very big difference.
 
 ## Usage
 
 It is VERY easy to use.
+
+- `sy(value)` and `sx(value)`
+- Example:
+  - `sy(10`) - size relative to screen height.
+  - `sx(10`) - size relative to screen width.
 
 ```Dart
 // Usage in Stateful/State
@@ -138,7 +147,7 @@ Please note that these scaler methods are relative to screen size. So basically 
 
 ALSO, another thing to note is that if you use `sy` for height and `sx` for width (or vice-versa), you'll get widgets with the same ratio (not size) which is still useful. The _Scaled_ preview image above uses only `sy`, and containers and text has the same size across different screens.
 
-If you want to make a perfect _Square_ container, DON'T do this:
+### If you want to make a perfect _Square_ container, DON'T do this:
 
 ```Dart
 Container(
@@ -148,7 +157,7 @@ Container(
 // Yeah they are the same value "300", but they are not the same unit 'cause you used "sx" on the width.
 ```
 
-DO this instead:
+### DO this instead:
 
 ```Dart
 Container(
