@@ -1,6 +1,6 @@
 name: relative_scale
 description: RelativeScale is a simple and custom sizing system for flutter widgets to achieve the same physical sizes across different devices.
-version: 1.0.5
+version: 1.0.6
 homepage: https://github.com/xamantra/flutter_relative_scale
 
 environment:
