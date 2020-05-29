@@ -1,3 +1,7 @@
+## version: 1.0.7
+
+- **NEW:** `RelativeBuilder` which can be used for stateless widgets, you can also use this in stateful widgets. Head to [example](https://pub.dev/packages/relative_scale#-example-tab-) tab.
+
 ## version: 1.0.6
 
 - updated readme and package description.
