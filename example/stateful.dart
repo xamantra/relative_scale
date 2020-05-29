@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:relative_scale/relative_scale.dart';
 
-class ScaledExample extends StatefulWidget {
-  ScaledExample({Key key}) : super(key: key);
+class Example extends StatefulWidget {
+  Example({Key key}) : super(key: key);
 
   @override
-  _ScaledExampleState createState() => _ScaledExampleState();
+  _ExampleState createState() => _ExampleState();
 }
 
 // RelativeScaler is a mixin
-class _ScaledExampleState extends State<ScaledExample> with RelativeScale {
+class _ExampleState extends State<Example> with RelativeScale {
   @override
   Widget build(BuildContext context) {
     // this is very important, you should always call this whenever you implement RelativeScaler on a widget.

@@ -2,6 +2,8 @@
 
 RelativeScale is a simple and custom sizing system for flutter widgets to achieve the same physical sizes across different devices.
 
+**UPDATE:** Official support for stateless widgets with `RelativeBuilder` is now available!
+
 ## Preview
 
 My base screensize when layouting these widgets is `480 x 800`. Source code for this preview app is [here](https://github.com/xamantra/flutter_relative_scale_example).
