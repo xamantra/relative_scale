@@ -16,14 +16,14 @@ RelativeScale is a simple and custom sizing system for flutter widgets to achiev
 
 ## Preview
 
-My base screensize when layouting these widgets is `480 x 800`. Source code for this preview app is [here](https://github.com/xamantra/flutter_relative_scale_example).
+My base screen size when I layout these widgets is `480 x 800`. The source code for this preview app is [here](https://github.com/xamantra/flutter_relative_scale_example).
 
 - Scaled with `RelativeScale`.
 ![Scaled](./preview/scaled.png)
-Now, look at this scaled widgets with _RelativeScale_. There is a difference yeah, but that's because of the system scaled sizes like the AppBar (look at the appbar's height :) ). Now let's forget about that and focus on the texts and the rectangle containers. They are definitely same sizes.
+Now, look at these scaled widgets with _RelativeScale_. There is a difference, yeah, but that's because of the system scaled sizes like the AppBar (look at the appbar's height :) ). Now let's forget about that and focus on the texts and the rectangle containers. They are the same sizes.
   <hr>
 
-- Normal scaling from flutter.
+- Normal scaling from a flutter.
   ![Unscaled](./preview/unscaled.png)
   Now, for unscaled sizes, no _RelativeScale_ at all. Well, that's quite obvious :). Look at the texts on the last image, they are very small comparing to the first image. And the rectangle containers, very big difference.
 
@@ -112,13 +112,13 @@ class _ScaledExampleState extends State<ScaledExample> with RelativeScale {
 
 ```
 
-Full example is in the [Example](https://pub.dev/packages/relative_scale#-example-tab-) section.
+The full example is in the [Example](https://pub.dev/packages/relative_scale#-example-tab-) section.
 
 Now, this example is implemented in _Stateful->State_ widget. How about _Stateless_ widget?
 
 Well, if you implement it on a stateless widget, you'll get an analyzer warning saying Stateless class is `immutable`. But the `RelativeScale` mixin's properties are not final so it's mutable.
 
-YOU CAN STILL USE the mixin in Stateless widget and run the app fine without problems actually.
+YOU CAN STILL USE the mixin in Stateless widget and run the app fine without problems.
 It's just a linter warning but if you don't wanna see it, you can setup a custom analyzer options, like this:
 
 `analysis_options.yaml` :
@@ -133,9 +133,9 @@ This file must be in your project root directory. But please note that we're bre
 
 ## Scaling Notes
 
-Ok so I'm pretty sure some or most of you is going to use this on existing projects.
+Ok, so I'm pretty sure some or most of you are going to use this on existing projects.
 
-For instance you have a container widget like this:
+For instance, you have a container widget like this:
 
 ```Dart
 Container(
@@ -157,7 +157,7 @@ they will not be the same size anymore, using relative scaler will make your siz
 
 Please note that these scaler methods are relative to screen size. So basically in this case `sy(50)` and `sx(50)` is NOT the same size.
 
-ALSO, another thing to note is that if you use `sy` for height and `sx` for width (or vice-versa), you'll get widgets with the same ratio (not size) which is still useful. The _Scaled_ preview image above uses only `sy`, and containers and text has the same size across different screens.
+Also, another thing to note is that if you use `sy` for height and `sx` for width (or vice-versa), you'll get widgets with the same ratio (not size) which is still useful. The _Scaled_ preview image above uses only `sy`, and containers and text have the same size across different screens.
 
 ### If you want to make a perfect _Square_ container, DON'T do this:
 
