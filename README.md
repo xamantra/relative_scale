@@ -2,6 +2,16 @@
 
 RelativeScale is a simple and custom sizing system for flutter widgets to achieve the same physical sizes across different devices.
 
+<a href="https://pub.dev/packages/relative_scale" target="_blank"><img src="https://img.shields.io/pub/v/relative_scale" alt="Pub Version" /></a>
+<a href="https://pub.dev/packages/relative_scale#-analysis-tab-" target="_blank"><img src="https://img.shields.io/badge/dynamic/json?color=orange&label=popularity&query=popularity&url=http://www.pubscore.gq/all?package=relative_scale" alt="popularity" /></a>
+<a href="https://pub.dev/packages/relative_scale#-analysis-tab-" target="_blank"><img src="https://img.shields.io/badge/dynamic/json?color=blue&label=score&query=overall&url=http://www.pubscore.gq/all?package=relative_scale" alt="score" /></a>
+<a href="https://pub.dev/packages/relative_scale#-analysis-tab-" target="_blank"><img src="https://img.shields.io/badge/dynamic/json?color=blue&label=maintenance&query=maintenance&url=http://www.pubscore.gq/all?package=relative_scale" alt="maintenance" /></a>
+<a href="https://pub.dev/packages/relative_scale#-analysis-tab-" target="_blank"><img src="https://img.shields.io/badge/dynamic/json?color=green&label=health&query=health&url=http://www.pubscore.gq/all?package=relative_scale" alt="health" /></a>
+<a href="https://github.com/xamantra/flutter_relative_scale/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/xamantra/flutter_relative_scale" alt="GitHub license" /></a>
+<a href="https://github.com/xamantra/flutter_relative_scale/commits/master" target="_blank"><img src="https://img.shields.io/github/last-commit/xamantra/flutter_relative_scale" alt="GitHub last commit" /></a>
+
+---
+
 **UPDATE:** Official support for stateless widgets with `RelativeBuilder` is now available!
 
 ## Preview
