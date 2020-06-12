@@ -1,3 +1,7 @@
+## version: 1.0.8
+
+- Readme patch. Added badges and fixed the grammars.
+
 ## version: 1.0.7
 
 - **NEW:** `RelativeBuilder` which can be used for stateless widgets, you can also use this in stateful widgets. Head to [example](https://pub.dev/packages/relative_scale#-example-tab-) tab.
