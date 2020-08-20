@@ -1,4 +1,4 @@
-<p align="center"><img src="relative_scale.png"></p>
+<p align="center"><img src="https://i.imgur.com/yB3GZ9j.png"></p>
 
 <p align="center">RelativeScale is a simple and custom sizing system for flutter widgets to achieve the same physical sizes across different devices.</p>
 

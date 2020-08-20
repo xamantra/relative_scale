@@ -1,3 +1,9 @@
+## 1.1.0
+
+- hosted the logo in imgur instead of in root directory
+
+<hr>
+
 ## 1.0.9
 
 - Readme update.
