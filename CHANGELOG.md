@@ -1,3 +1,9 @@
+## 1.1.1
+- Deprecated `RelativeScale`.
+- Updated readme.
+
+<hr>
+
 ## 1.1.0
 
 - hosted the logo in imgur instead of in root directory

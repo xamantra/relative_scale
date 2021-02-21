@@ -19,6 +19,7 @@ class TestWidget extends StatefulWidget {
   _TestWidgetState createState() => _TestWidgetState();
 }
 
+// ignore: deprecated_member_use_from_same_package
 class _TestWidgetState extends State<TestWidget> with RelativeScale {
   @override
   void didChangeDependencies() {

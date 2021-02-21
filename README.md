@@ -1,6 +1,6 @@
 <p align="center"><img src="https://i.imgur.com/yB3GZ9j.png"></p>
 
-<p align="center">RelativeScale is a simple and custom sizing system for flutter widgets to achieve the same physical sizes across different devices.</p>
+<p align="center">RelativeScale is a simple custom sizing system for flutter widgets to achieve the same physical sizes across different devices.</p>
 
 <p align="center">
 <a href="https://pub.dev/packages/relative_scale" target="_blank"><img src="https://img.shields.io/pub/v/relative_scale" alt="Pub Version" /></a>
@@ -25,8 +25,8 @@ It is VERY easy to use.
   - `sy(10`) - size relative to screen height.
   - `sx(10`) - size relative to screen width.
 
-- `RelativeScale` - A StatefulWidget mixin that provides the scaling methods `sy` and `sx`.
-- `RelativeBuilder` - A builder widget that provides the scaling methods `sy` and `sx`. This is more recommended than RelativeScale mixin.
+- `RelativeBuilder` - A builder widget that provides the scaling methods `sy` and `sx`.
+- `RelativeScale` (`deprecated`) - A StatefulWidget mixin that provides the scaling methods `sy` and `sx`. It is highly recommended to use `RelativeBuilder`.
 
 <hr>
 
@@ -38,7 +38,7 @@ class Example extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RelativeBuilder(
-      builder: (context, screenHeight, screenWidth, sy, sx) {
+      builder: (context, height, width, sy, sx) {
         return Scaffold(
           appBar: AppBar(
             title: Text(
@@ -47,8 +47,8 @@ class Example extends StatelessWidget {
             ),
           ),
           body: Container(
-            height: screenHeight,
-            width: screenWidth,
+            height: height,
+            width: width,
             child: Text(
               'Body Text',
               style: TextStyle(fontSize: sy(11)),
@@ -129,4 +129,5 @@ Container(
 )
 ```
 
-Lastly, the library doesn't support orientation yet. If you designed your app for portrait and the user rotates the app to landscape view, the sizes will messed up. So if you want to use this library, it's highly recommended you lock the rotation. Or if your app should adapt to orientation, **DO NOT** use this library, there are a lot of alternatives.
+## Portrait & Landscape
+The library doesn't support orientation yet. If you designed your app for portrait and the user rotates the app to landscape view, the sizes will be messed up. So if you want to use this library, it's highly recommended you lock the rotation. Or if your app should adapt to orientation, **DO NOT** use this library, there are a lot of alternatives.
