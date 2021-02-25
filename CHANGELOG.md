@@ -1,3 +1,8 @@
+## 1.1.2
+- Formatting with `dartfmt -w lib`.
+
+<hr>
+
 ## 1.1.1
 - Deprecated `RelativeScale`.
 - Updated readme.

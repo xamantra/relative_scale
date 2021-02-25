@@ -30,7 +30,8 @@ import 'package:flutter/material.dart';
 ///   );
 /// }
 /// ```
-@Deprecated("This mixin is no longer recommended. Use \"RelativeBuilder\" instead.")
+@Deprecated(
+    "This mixin is no longer recommended. Use \"RelativeBuilder\" instead.")
 mixin RelativeScale {
   double _screenHeight;
   double _screenWidth;
