@@ -1,3 +1,7 @@
+## 2.0.0
+- Null-safety.
+- Flutter 2.0.0.
+
 ## 1.1.2
 - Formatting with `dartfmt -w lib`.
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:relative_scale/relative_scale.dart';
 
 class RelativeBuilderWidget extends StatelessWidget {
-  const RelativeBuilderWidget({Key key}) : super(key: key);
+  const RelativeBuilderWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class RelativeBuilderWidget extends StatelessWidget {
 }
 
 class TestWidget extends StatelessWidget {
-  const TestWidget({Key key}) : super(key: key);
+  const TestWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

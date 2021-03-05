@@ -33,14 +33,14 @@ import 'package:flutter/material.dart';
 @Deprecated(
     "This mixin is no longer recommended. Use \"RelativeBuilder\" instead.")
 mixin RelativeScale {
-  double _screenHeight;
-  double _screenWidth;
+  double? _screenHeight;
+  double? _screenWidth;
 
   /// `RelativeScale.screenHeight` -> the height of the screen.
-  double get screenHeight => _screenHeight;
+  double? get screenHeight => _screenHeight;
 
   /// `RelativeScale.screenWidth` -> the width of the screen.
-  double get screenWidth => _screenWidth;
+  double? get screenWidth => _screenWidth;
 
   /// Initialize `RelativeScale`.
   initRelativeScaler(BuildContext context) {
@@ -51,12 +51,12 @@ mixin RelativeScale {
 
   /// Size relative to the `height` of the screen.
   double sy(double value) {
-    return (_screenHeight * _calculate(value)).roundToDouble();
+    return (_screenHeight! * _calculate(value)).roundToDouble();
   }
 
   /// Size relative to the `width` of the screen.
   double sx(double value) {
-    return (_screenWidth * _calculate(value)).roundToDouble();
+    return (_screenWidth! * _calculate(value)).roundToDouble();
   }
 
   double _calculate(double value) {
@@ -78,7 +78,7 @@ class RelativeBuilder extends StatelessWidget {
   /// Scale the sizes the way you want. Defaults to `1.0`.
   /// If `RelativeBuilder` turns your sizes a bit bigger or smaller
   /// you can decrease or increase the scale to match your expected sizes.
-  final double scale;
+  final double? scale;
 
   /// ## Parameters
   /// `context` - The [BuildContext] for this builder widget.
@@ -111,9 +111,9 @@ class RelativeBuilder extends StatelessWidget {
   /// A relative builder specially made for stateless widget which can't
   /// inherit from the mixin RelativeScale.
   const RelativeBuilder({
-    Key key,
+    Key? key,
     this.scale,
-    @required this.builder,
+    required this.builder,
   }) : super(key: key);
 
   @override
@@ -123,11 +123,11 @@ class RelativeBuilder extends StatelessWidget {
 }
 
 class _RelativeBuilder extends StatefulWidget {
-  final double scale;
-  final _RelativeBuilderFunction builder;
+  final double? scale;
+  final _RelativeBuilderFunction? builder;
 
   const _RelativeBuilder({
-    Key key,
+    Key? key,
     this.scale,
     this.builder,
   }) : super(key: key);
@@ -139,7 +139,7 @@ class _RelativeBuilder extends StatefulWidget {
 class _RelativeBuilderState extends State<_RelativeBuilder> {
   @override
   Widget build(BuildContext context) {
-    return widget.builder(
+    return widget.builder!(
       context,
       _screenHeight,
       _screenWidth,
